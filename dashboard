@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winplus - Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+    <h2 class="text-2xl font-bold text-center text-blue-600">Bienvenido a Winplus</h2>
+    <div class="flex justify-around mt-6">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">Hogar</button>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">Tareas</button>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">Equipo</button>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">VIP</button>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">Perfil</button>
+    </div>
+
+    <script>
+        if (!localStorage.getItem("userEmail")) {
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>
